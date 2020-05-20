@@ -12,7 +12,7 @@
 // Решение
 
 function upperCaseFirst(string){
-    if (!string) return string;
+    if (!string || string.length == 0) return string;
 
     return string[0].toUpperCase() + string.slice(1);
 }

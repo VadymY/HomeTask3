@@ -13,6 +13,7 @@
 // Решение
 
 function checkSpam(source, example) {
+    if (!source || source.length == 0 || !example || example.length == 0) return false;
     let lowerStr = source.toLowerCase();
     let lowerEx = example.toLowerCase();
 
