@@ -16,7 +16,7 @@ const PRICE = '$120';
 // Решение
 
 function extractCurrencyValue(str) {
-    if (str == null || str.length == 0 || typeof (str) != "string") return str;
+    if (str == null || str.length == 0 || typeof(str) != "string") return str;
 
     return Number(str.slice(1));
 }
