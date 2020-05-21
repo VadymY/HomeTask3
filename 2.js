@@ -13,7 +13,7 @@
 // Решение
 
 function checkSpam(source, example) {
-    if (!source || source.length == 0 || !example || example.length == 0) return false;
+    if (!source || source.length == 0 || !example || example.length == 0 || typeof (source) != "string" || typeof (example) != "string") return false;
     let lowerStr = source.toLowerCase();
 
     return lowerStr.includes(example.toLowerCase());
