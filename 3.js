@@ -16,7 +16,7 @@
 // Решение
 
 function truncate(str, maxlength) {
-    if (str == null || str.length == 0) return str;
+    if (str == null || str.length == 0 || maxlength < 3) return str;
     return (str.length > maxlength) ?
         str.substr(0, maxlength - 3) + '...' : str;
 }
